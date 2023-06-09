@@ -1,0 +1,130 @@
+/*background colour outside of the margins of the wrapper*/
+body {
+
+    background-color: rgba(211, 211, 211, 0.7);
+
+    box-sizing: border-box;
+
+}
+
+/*styling the wrapper class
+width is set to 80% of viewport width
+border is set around wrapper
+margin 0 auto pushes wrapper to center of the page
+*/
+.wrapper {
+
+    width: 80vw;
+
+    background-color: #ECECEC;
+
+    border: 10px ridge #8b008b;
+
+    margin: 0 auto;
+
+    padding: 5px;    
+
+}
+
+/*setting the header to 90% of the parent element and aligning it in the middle of the wrapper
+setting an appropriate background colour for the header
+*/
+
+.wrapper header {
+
+    width: 90%;
+
+    margin: 0 auto;
+
+    text-align: center;
+
+    background-color: #f5f5dc;
+
+}
+
+/*turning the section into a flex container*/
+section {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+}
+
+/*image was already responsive from part 1*/
+section img {
+
+    width: 30%;
+
+    height: auto;
+
+}
+
+/*aqua shadow and 1.25* brightness*/
+img:hover {
+
+    filter: drop-shadow(16px 16px 20px aqua) brightness(1.25);
+
+}
+
+p {
+
+    padding: 15px;
+
+}
+
+/*all odd list items will be bolded with square bullet points*/
+li:nth-child(odd) {
+
+    font-weight: bold;
+
+    list-style-type: square;
+
+}
+
+
+/*linear gradient not detracting from readability*/
+.list-container {
+
+    background: linear-gradient(0deg, rgba(245,238,247,1) 0%, rgba(190,217,249,1) 50%);
+
+}
+
+/*flex container containing the image and figcaption*/
+figure {
+
+    display: flex;
+
+    align-items: center;
+
+    flex-direction: column;
+}
+
+figure img {
+
+    width: 25%;
+
+    height: auto;
+}
+
+figure figcaption {
+
+    font-size: 8px;
+
+}
+
+/*all font on page turned dark red*/
+* {
+
+    color: #8b0000;
+
+}
+
+/*paragraph elements turned back to default black. This code takes priority*/
+p {
+
+    color: black;
+
+}
